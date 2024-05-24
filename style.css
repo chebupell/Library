@@ -1,0 +1,713 @@
+body {
+    margin: 0 auto;
+}
+
+.out-wrapper {
+    width: 1440px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Forum", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 28px;
+}
+
+nav {
+    background-color: rgb(12, 12, 14);
+    display: flex;
+    height: 90px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 18.2px;
+    margin-left: auto;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-button {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0%;
+    background-color: rgb(12, 12, 14);
+    border: 0px;
+}
+
+@media (max-width:768px) {
+    .nav-button {
+        display: none;
+    }
+}
+
+
+.logo-img {
+    width: 100%;
+}
+
+.profile-buttom {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 26px;
+    margin-top: 14px;
+    margin-left: 10px;
+    width: 28px;
+}
+
+@media (max-width:768px) {
+    .burger-menu-line.hide {
+        border: 2px solid rgb(255, 255, 255);
+        width: 45px;
+        height: 0;
+    }
+
+    .burger-menu {
+        display: flex;
+        width: 45px;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 20px;
+    }
+}
+
+
+
+.about-text {
+    color: rgb(12, 12, 14);
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 17.3px;
+    margin-bottom: 0;
+}
+
+.line {
+    background: rgb(12, 12, 14);
+    width: 50px;
+    height: 1px;
+    margin-left: 695px;
+    margin-top: 20px;
+}
+
+.about-library {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.img-galary {
+    display: flex;
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.arrow-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.arrow-left1 {
+    display: none;
+    width: 10px;
+    position: absolute;
+    margin-top: 17px;
+    border: 1px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+}
+
+.arrow-left2 {
+    display: none;
+    position: absolute;
+    width: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    transform: rotate(135deg);
+}
+
+.arrow-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.arrow-right1 {
+    display: none;
+    width: 10px;
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+}
+
+.arrow-right2 {
+    display: none;
+    position: absolute;
+    margin-top: 17px;
+    width: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    transform: rotate(135deg);
+}
+
+
+@media (max-width: 768px) {
+    .second-pic-galary {
+        display: none;
+    }
+
+    .third-pic-galary {
+        display: none;
+    }
+
+    .img-galary {
+        justify-content: space-around;
+
+    }
+
+    .change-galary-addaptive {
+        width: 16px;
+        height: 16px;
+        left: 712px;
+        right: -660px;
+        top: 781px;
+        bottom: -781px;
+        border-radius: 50px;
+        background-color: rgb(12, 12, 14);
+    }
+
+    .arrow-left1 {
+        display: block;
+    }
+
+    .arrow-left2 {
+        display: block;
+    }
+
+    .arrow-right1 {
+        display: block;
+    }
+
+    .arrow-right2 {
+        display: block;
+    }
+
+}
+
+.change-galary {
+    width: 16px;
+    height: 16px;
+    left: 712px;
+    right: -660px;
+    top: 781px;
+    bottom: -781px;
+    border-radius: 50px;
+    background-color: rgb(12, 12, 14);
+}
+
+.change-galary.active {
+    background: rgb(187, 148, 95);
+}
+
+.galary-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.favorites-text {
+    width: 160px;
+    height: 40px;
+    margin-left: 640px;
+    margin-top: 60px;
+    color: rgb(12, 12, 14);
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.pick-favorites-text {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.pick-season-button {
+    width: 17px;
+    height: 17px;
+    box-sizing: border-box;
+    accent-color: rgb(0, 0, 0);
+
+}
+
+.seasons-wrapper {
+    margin-top: 39px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.season-text {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-left: 16px;
+    margin-right: 88px;
+}
+
+.season-text.active {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-left: 16px;
+    margin-right: 86.5px;
+}
+
+.season-books {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 40px 260px;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.book-wrapper {
+    width: 550px;
+    height: 555px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+@media (max-width:768px) {
+    .season-books {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+}
+
+.season-books h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+    font-family: "Forum", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+.undertext-line {
+    width: 60px;
+    height: 0;
+    left: 40px;
+    top: 303.5px;
+    border: 1px solid rgb(187, 148, 95);
+}
+
+h5 {
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.about-book {
+    margin: 0;
+    width: 355px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.book-img {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 389px;
+    bottom: -1px;
+}
+
+.buy-button {
+    position: relative;
+    width: 75px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid rgb(12, 12, 14);
+    border-radius: 2px;
+    color: rgb(12, 12, 14);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.coffee-shop-text {
+    margin: 0;
+    height: 40px;
+    color: rgb(12, 12, 14);
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+
+.about-coffee-shop {
+    width: 1400px;
+    height: 120px;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 16px;
+}
+
+.main-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .main-list-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.main-list-wrapper h4 {
+    margin: 0;
+    color: rgb(187, 148, 95);
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.coffee-and-tea-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+    padding-left: 10px;
+    margin: 0;
+    width: 438px;
+}
+
+.menu-item-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 60px
+}
+
+.menu-item-price {
+    color: rgb(0, 0, 0);
+    font-family: "Forum", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.menu-item-name {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.coffee-and-tea-wrapper .menu-item-line {
+    border: 1px solid rgb(187, 148, 95);
+    width: 100px;
+    height: 0;
+    margin-left: auto;
+}
+
+.desserts-and-cakes-wrapper ul {
+    list-style: none;
+    padding-right: 0;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.desserts-and-cakes-wrapper h4 {
+    text-align: end;
+}
+
+.desserts-and-cakes-wrapper .menu-item-line {
+    border: 1px solid rgb(187, 148, 95);
+    width: 100px;
+    height: 0;
+}
+
+.desserts-and-cakes-wrapper .menu-item-wrapper {
+    justify-content: end;
+}
+
+.our-contacts-text {
+    margin: 0;
+    color: rgb(12, 12, 14);
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+
+.contacts-wrapper h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.contacts-wrapper ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.contacts-wrapper li {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.contacts-map-wrapper {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .contacts-map-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+.contacts-map-wrapper p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.contacts-map-wrapper iframe {
+    margin-top: 56px;
+    margin-right: 20px;
+}
+
+footer {
+    background: rgb(12, 12, 14);
+    margin-top: 44px;
+    padding-bottom: 45px;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.adress-and-time {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-and-time {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-and-time p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.big-line {
+    width: 1400px;
+    height: 0;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 23px;
+    margin-bottom: 44px;
+}
+
+.footer-info p {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.out-wrapper {
+    position: relative;
+}
+
+.burger-wrapper {
+    display: none;
+}
+
+
+
+@media (max-width:768px) {
+    .burger-button {
+        color: rgb(255, 255, 255);
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 0%;
+        background-color: rgb(12, 12, 14);
+        border: 0px;
+    }
+
+    .burger-wrapper {
+        width: 332px;
+        background: rgb(12, 12, 14);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        align-items: center;
+    }
+
+}
+
+.hide {
+    display: none;
+}
